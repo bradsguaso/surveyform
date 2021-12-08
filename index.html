@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alberto Bradshaw González">
+    <meta name="description" content="Survey Form for Freecodecamp Certification">
+    <meta name="keywords" content="form, survey">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Title</title>
+</head>
+
+<body>
+
+    <header class="survform">
+
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This is a survey form. Thanks.</p>
+        <br>
+
+    </header>
+
+    <main class="main">
+
+        <form id="survey-form" class="form">
+
+            <div id="name_group">
+
+                <h2 class="name">Name</h2>
+                <input id="name" type="text" class="firstname" placeholder="Name" required>
+                <label id="name-label" for="name" class="firstlabel">Name</label>
+
+                <input id="lastname_text" type="text" class="lastname" placeholder="Last Name" required>
+                <label id="last_name" for="lastname_text" class="lastlabel">Last Name</label>
+
+            </div>
+
+            <label id="email-label" for="email" class="name"> Email</label>
+            <input id="email" type="email" class="email" placeholder="Email" required>
+
+
+            <label id="number-label" for="number" class="name">Age</label>
+            <input id="number" type="number" class="number" placeholder="18" required min="18" max="120">
+
+
+            <h2 id="select-label" for="dropdown" class="name">Vehicle</h2>
+            <select name="dropdown_widget" id="dropdown" class="option">
+                <option value="car">Car</option>
+                <option value="motorcicle">Moto</option>
+                <option value="bicicle">Bicicle</option>
+            </select>
+
+
+            <h2 id="student" class="name"> Are you beginner</h2>
+            <label for="" class="radio">
+                <input class="radio-one" type="radio" name="student-radio" id="" checked="checked" value="yes">
+                <span class="checkmark"></span>
+                Yes
+            </label>
+
+            <label for="" class="radio">
+                <input class="radio-two" type="radio" name="student-radio" value="no">
+                <span class="checkmark"></span>
+                No
+            </label>
+
+            <h2 id="language" class="name"> Select your preferences: </h2>
+            <DIV id="languages" class="">
+                <input type="checkbox" id="hmtl" name="languaje" value="HTML">
+                <label for="red">HTML</label>
+
+                <input type="checkbox" id="css" name="languaje" value="CSS">
+                <label for="blue">CSS</label>
+
+                <input type="checkbox" id="javascript" name="languaje" value="JavaScript">
+                <label for="black">JavaScript</label>
+            </DIV>
+
+            <h2 id="student" class="name"> Text about you</h2>
+            <textarea id="description" class="about"></textarea>
+
+
+            <button id="submit" type="submit" class="btn-submit" value="Submit">Submit</button>
+
+        </form>
+    </main>
+
+
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
